@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--  <html lang="en"> -->
+<!-- <button type="button" style="background-color:yellow;margin:auto;display:block">mybuttonname</button> -->
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Alexanian Norair">
+      <meta rel="icon" href="pics\logo.ico">
+      <link rel="stylesheet" href="dist\css\bootstrap.min.css">
+      <script src="dist\js\jquery.min.js"></script>
+      <script src="dist\js\popper.min.js"></script>
+      <script src="dist\js\bootstrap.min.js"></script>
+      <link href="others css\a.css" rel="stylesheet">
+      <link href="others css\picture row.css" rel="stylesheet">
+      <link href="others css\picroww.css" rel="stylesheet">
+      <link href="others css\textimage2.css" rel="stylesheet">
+      <link href="others css\button.css" rel="stylesheet">
+      <link href="others css\button hover.css" rel="stylesheet">
+      <link href="others css\button1.css" rel="stylesheet">
+      <link href="others css\c1.css" rel="stylesheet">
+	  <link href="others css\formation.css" rel="stylesheet">
+	  <link href="others css\sommet.css" rel="stylesheet">
+      <style>
+		 #up{
+		 margin-top: 100px;
+		 }
+		 #down{
+		 margin-top: 300px;
+		 }
+		 #marge{
+		 margin-top: 30px;
+		 }
+         #top {
+			height: 100vh;
+			width : 100%;
+			z-index: 9;
+			position  :absolute;
+			color : white;
+         } 
+         #contact {
+			background-color: #c14333;
+			color: white;
+			height: 800px;
+		    margin-top: 20px;
+         }
+         #picrow
+         {
+         background-image: url(./pics/1.jpg);
+         height: 100vh;
+         background-position: center;
+         background-size: cover;
+         background-attachment: scroll;
+         background-repeat: no-repeat;
+         z-index: 7;
+         }
+		 #picrow2
+         {
+			background : black;
+			opacity : 0.25;
+			height: 100vh;
+			width : 100%;
+			z-index: 8;
+			position  :absolute;
+         }
+		 body {
+		 position: relative;
+		 }
+		 
+      </style>
+	  
+   </head>
+   <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+         <a class="navbar-brand" href="#">
+         <img class="img-responsive" src="pics\logo4.png"  > 
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#Formations">Formations</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#Produits">Produits</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#Services">Services</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#Contact">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+	  
+    <div class="container-fluid">
+		 <div id="picrow2" class="row"></div>
+         <div id="top" class="row">
+            <div id="up" class="col-md-12">
+				<div class="row justify-content-center">
+				    <h4 class="formation" >Formations, Produits et Services</h4>
+				</div>
+			
+				<div id="up" class="row justify-content-center">
+					<h1 class="sommet"><b>EN ROUTE POUR LE SOMMET</b></h1>
+				</div>
+	         
+				<div id="down" class="row justify-content-center">
+				    <h4>En savoir plus</h4>
+				</div>
+	        </div>
+           
+         </div>
+         
+		 <div id="picrow" class="row"></div>
+    </div>
+	  
+      <div id="Formations"  class="container">
+         <div id="marge" class="row">
+            <div class="col-md-6">
+               <h1> Nos <b>Formations</b></h1>
+               <p>Coté formation l'entreprise propose le catalogue suivant. Cependant en 
+                  fonction de vos désirs, nous ainsi que nos partenaires pouvons vous proposer la formation 
+                  sur-mesure correspondant à votre projet pédagogique. 
+               </p>
+			   <a href="http://formosa.fr/formation.php" class="button">Catalogue</a>
+            </div>
+            <div class="col-md-6">
+               <img class="img-responsive" src="pics\2.jpg" width="100%" >
+            </div>
+         </div>
+      </div>
+	  
+      <div class="jumbotron " >
+         <div id="Produits"  class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <img class="img-responsive" src="pics\3.jpg" width="100%" >
+               </div>
+               <div class="col-md-6">
+                  <h1> Nos <b>Produits</b></h1>
+                  <p>Formosa c'est aussi un produit,un logiciel pour l'apprentissage du
+                     Chinois nommé SmartChinese
+                     SmartChineseest au coeur de la recherche et de l'innovation
+                     avec des moyens pédagogiques inédit
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+	  
+      <div id="Services" class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h1> Nos <b>Services</b></h1>
+               <p>Formosa c'est aussi du service en: réalisation de site web,
+                  traduction de site web en Chinois,suivi de projet.
+                  Nous collaborons aussi avec les écoles de productions 
+                  et des ecoles privées en informatiques
+               </p>
+            </div>
+            <div class="col-md-6">
+               <img class="img-responsive" src="pics\4.jpg" width="100%" >
+            </div>
+         </div>
+      </div>
+
+      <div id="Contact" class="container">
+         <div id="marge" class="row text-center">
+            <div class="col-md-3">
+               <img class="img-responsive" src="pics\Envato.png" width="50%" >
+            </div>
+            <div class="col-md-3">
+               <img class="img-responsive" src="pics\WordPress.png" width="50%" >
+            </div>
+            <div class="col-md-3 ">
+               <img class="img-responsive" src="pics\Tuts+.png" width="50%" >
+            </div>
+            <div class="col-md-3 ">
+               <img class="img-responsive" src="pics\Microlancer.png" width="50%" >
+            </div>
+         </div>
+      </div>
+	  
+      <div id="contact" class="container-fluid">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h1><b>CONTACTEZ-</b>Nous</h1>
+                  <p>Envie de discuter autour d’un projet, d’une formation, d’une idée, 
+                     nous sommes à votre écoute
+                  </p>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Mobile-Icon.png" width: 18px; height: 29px; > </p>
+                        <p> +33662158609</p>
+                     </div>
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Mail-Icon.png" width: 18px; height: 29px; > </p>
+                        <p>contact@formosa.fr</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Twitter-Icon.png" width: 18px; height: 29px; > </p>
+                        <p>@formosa</p>
+                     </div>
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Facebook-Icon.png" width: 18px; height: 29px; > </p>
+                        <p>facebook.com/formosa</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Google+-Icon.png" width: 18px; height: 29px; > </p>
+                        <p>+plus.com/formosa</p>
+                     </div>
+                  </div>
+               </div>
+			    <div class="col-md-6">
+               <div class="form-group shadow-textarea">
+                  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="1" placeholder="Votre Nom *"></textarea>
+               </div>
+               <div class="form-group shadow-textarea">
+                  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="1" placeholder="Votre E-mail *"></textarea>
+               </div>
+               <div class="form-group shadow-textarea">
+                  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="6" placeholder="Votre Message *"></textarea>
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
+	  
+   </body>
+</html>
+
