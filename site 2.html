@@ -22,29 +22,33 @@
 	  <link href="others css\formation.css" rel="stylesheet">
 	  <link href="others css\sommet.css" rel="stylesheet">
       <style>
-		 #up{
-		 
-		 margin-top: 100px;
-		 }
-		 #down{
-		 margin-top: 300px;
-		 }
-		 #marge{
-		 margin-top: 30px;
-		 }
-         #top {
-			height: 100vh;
-			width : 100%;
-			z-index: 9;
-			position  :absolute;
-			color : white;
-         } 
-         #contact {
-			background-color: #c14333;
-			color: white;
-			height: 800px;
-		    margin-top: 20px;
-         }
+		#up
+		{
+		margin-top: 100px;
+		}
+		#down
+		{
+		margin-top: 150px;
+		}
+		#marge
+		{
+		margin-top: 30px;
+		}
+        #top
+		{
+		height: 100vh;
+		width : 100%;
+		z-index: 9;
+		position  :absolute;
+		color : white;
+        } 
+        #contact
+		{
+		background-color: #c14333;
+		color: white;
+		height: 800px;
+		margin-top: 20px;
+        }
          #picrow
          {
          background-image: url(./pics/1.jpg);
@@ -56,18 +60,49 @@
          z-index: 7;
          }
 		 #picrow2
-         {
-			background : black;
-			opacity : 0.25;
-			height: 100vh;
-			width : 100%;
-			z-index: 8;
-			position  :absolute;
-         }
-		 body {
-		 position: relative;
-		 }
-		 
+        {
+		background : black;
+		opacity : 0.25;
+		height: 100vh;
+		width : 100%;
+		z-index: 8;
+		position  :absolute;
+        }
+		body 
+		{
+		position: relative;
+		}
+		@font-face 
+		{
+		font-family: Font;
+		src: url(./fonts/brandon-grotesque-regular-italic.otf);
+		}
+		div
+		{
+		font-family: Font;
+		}
+		#button1 
+		{ 
+		position :relative;
+		font-size: 20px;
+		color: #d92e19;
+		border-color: #d92e19;
+		border-radius: 5px;
+		border-width: medium;
+		width: 240px;
+		height: 65px;
+		}
+		#button2 
+		{ 
+		position :relative;
+		font-size: 20px;
+		color: #fff;;
+		border-color: #fff;
+		border-radius: 5px;
+		border-width: medium;
+		width: 240px;
+		height: 65px;
+		}
       </style>
 	  
    </head>
@@ -102,15 +137,15 @@
          <div id="top" class="row">
             <div id="up" class="col-md-12">
 				<div class="row justify-content-center">
-				    <h4 class="formation" >Formations, Produits et Services</h4>
+				    <p class="formation" >Formations, Produits et Services</p>
 				</div>
 			
 				<div id="up" class="row justify-content-center">
-					<h1 class="sommet"><b>EN ROUTE POUR LE SOMMET</b></h1>
+				<h1 class="sommet"><b>EN ROUTE POUR LE SOMMET</b></h1>
 				</div>
 	         
 				<div id="down" class="row justify-content-center">
-				    <h4>En savoir plus</h4>
+				   <a id="button2" href="http://formosa.fr/" class="btn btn-default">En savoir plus</a> 
 				</div>
 	        </div>
            
@@ -127,7 +162,7 @@
                   fonction de vos désirs, nous ainsi que nos partenaires pouvons vous proposer la formation 
                   sur-mesure correspondant à votre projet pédagogique. 
                </p>
-			   <a href="http://formosa.fr/formation.php" class="button">Catalogue</a>
+			   <a id="button1" href="http://formosa.fr/formation.php" class="btn btn-default">Catalogue</a>
             </div>
             <div class="col-md-6">
                <img class="img-responsive" src="pics\2.jpg" width="100%" >
