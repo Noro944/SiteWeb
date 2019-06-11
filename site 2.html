@@ -49,17 +49,17 @@
 		height: 800px;
 		margin-top: 20px;
         }
-         #picrow
-         {
-         background-image: url(./pics/1.jpg);
-         height: 100vh;
-         background-position: center;
-         background-size: cover;
-         background-attachment: scroll;
-         background-repeat: no-repeat;
-         z-index: 7;
-         }
-		 #picrow2
+        #picrow
+        {
+        background-image: url(./pics/1.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        z-index: 7;
+        }
+		#picrow2
         {
 		background : black;
 		opacity : 0.25;
@@ -74,12 +74,39 @@
 		}
 		@font-face 
 		{
-		font-family: Font;
+		font-family: Font1;
+		src: url(./fonts/brandon-grotesque-light.otf);
+		}
+		@font-face 
+		{
+		font-family: Font2;
+		src: url(./fonts/brandon-grotesque-bold.otf);
+		}
+		@font-face 
+		{
+		font-family: Font3;
+		src: url(./fonts/brandon-grotesque-medium.otf);
+		}
+		@font-face 
+		{
+		font-family: Font4;
 		src: url(./fonts/brandon-grotesque-regular-italic.otf);
 		}
-		div
+		#light
 		{
-		font-family: Font;
+		font-family: Font1;
+		}
+		#bold
+		{
+		font-family: Font2;
+		}
+		#medium
+		{
+		font-family: Font3;
+		}
+		#text
+		{
+		font-family: Font3;
 		}
 		#button1 
 		{ 
@@ -116,17 +143,17 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-               <li class="nav-item active">
-                  <a class="nav-link" href="#Formations">Formations</a>
+               <li class="nav-item">
+                  <a class="nav-link" href="#Formations"><span id="medium">Formations</span></a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#Produits">Produits</a>
+                  <a class="nav-link" href="#Produits"><span id="medium">Produits</span></a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#Services">Services</a>
+                  <a class="nav-link" href="#Services"><span id="medium">Services</span></a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#Contact">Contact</a>
+                  <a class="nav-link" href="#Contact"><span id="medium">Contact</span></a>
                </li>
             </ul>
          </div>
@@ -137,11 +164,11 @@
          <div id="top" class="row">
             <div id="up" class="col-md-12">
 				<div class="row justify-content-center">
-				    <p class="formation" >Formations, Produits et Services</p>
+				    <p class="formation" ><span id="light">Formations, Produits et Services</span></p>
 				</div>
 			
 				<div id="up" class="row justify-content-center">
-				<h1 class="sommet"><b>EN ROUTE POUR LE SOMMET</b></h1>
+				<h1 class="sommet"><b><span id="bold">EN ROUTE POUR LE SOMMET</span></b></h1>
 				</div>
 	         
 				<div id="down" class="row justify-content-center">
@@ -157,7 +184,7 @@
       <div id="Formations"  class="container">
          <div id="marge" class="row">
             <div class="col-md-6">
-               <h1> Nos <b>Formations</b></h1>
+               <h1> <span id="light">Nos </span><span id="bold"><b>Formations</b></span></h1>
                <p>Coté formation l'entreprise propose le catalogue suivant. Cependant en 
                   fonction de vos désirs, nous ainsi que nos partenaires pouvons vous proposer la formation 
                   sur-mesure correspondant à votre projet pédagogique. 
@@ -177,7 +204,7 @@
                   <img class="img-responsive" src="pics\3.jpg" width="100%" >
                </div>
                <div class="col-md-6">
-                  <h1> Nos <b>Produits</b></h1>
+                  <h1> <span id="light">Nos </span><span id="bold"><b>Produits</b></span></h1>
                   <p>Formosa c'est aussi un produit,un logiciel pour l'apprentissage du
                      Chinois nommé SmartChinese
                      SmartChineseest au coeur de la recherche et de l'innovation
@@ -191,7 +218,7 @@
       <div id="Services" class="container">
          <div class="row">
             <div class="col-md-6">
-               <h1> Nos <b>Services</b></h1>
+               <h1> <span id="light">Nos </span><span id="bold"><b>Services</span></b></h1>
                <p>Formosa c'est aussi du service en: réalisation de site web,
                   traduction de site web en Chinois,suivi de projet.
                   Nous collaborons aussi avec les écoles de productions 
@@ -225,7 +252,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <h1><b>CONTACTEZ-</b>Nous</h1>
+                  <h1><span id="bold"><b>CONTACTEZ-</b></span><span id="light">Nous</span></h1>
                   <p>Envie de discuter autour d’un projet, d’une formation, d’une idée, 
                      nous sommes à votre écoute
                   </p>
