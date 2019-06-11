@@ -1,164 +1,303 @@
 <!DOCTYPE html>
 <!--  <html lang="en"> -->
 <!-- <button type="button" style="background-color:yellow;margin:auto;display:block">mybuttonname</button> -->
-<html lang="fr"> 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Alexanian Norair">
-  <meta rel="icon" href="pics\logo.ico">
-  <link rel="stylesheet" href="dist\css\bootstrap.min.css">
-  <script src="dist\js\jquery.min.js"></script>
-  <script src="dist\js\popper.min.js"></script>
-  <script src="dist\js\bootstrap.min.js"></script>
-  <link href="others css\a.css" rel="stylesheet">
-  <link href="others css\picture row.css" rel="stylesheet">
-  <link href="others css\textimage1.css" rel="stylesheet">
-  <link href="others css\textimage2.css" rel="stylesheet">
-  <link href="others css\button.css" rel="stylesheet">
-  <link href="others css\button hover.css" rel="stylesheet">
-  <link href="others css\button1.css" rel="stylesheet">
-  <link href="others css\c1.css" rel="stylesheet">
-  <style>
-#contact {
-  background-color: #c14333;
-  color: white;
-}
-</style>
-</head>
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <a class="navbar-brand" href="#">
-	   <img class="img-responsive" src="pics\logo4.png"  > 
-	    </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Formations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Produit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Alexanian Norair">
+      <meta rel="icon" href="pics\logo.ico">
+      <link rel="stylesheet" href="dist\css\bootstrap.min.css">
+      <script src="dist\js\jquery.min.js"></script>
+      <script src="dist\js\popper.min.js"></script>
+      <script src="dist\js\bootstrap.min.js"></script>
+      <link href="others css\a.css" rel="stylesheet">
+      <link href="others css\picture row.css" rel="stylesheet">
+      <link href="others css\picroww.css" rel="stylesheet">
+      <link href="others css\textimage2.css" rel="stylesheet">
+      <link href="others css\button.css" rel="stylesheet">
+      <link href="others css\button hover.css" rel="stylesheet">
+      <link href="others css\button1.css" rel="stylesheet">
+      <link href="others css\c1.css" rel="stylesheet">
+	  <link href="others css\formation.css" rel="stylesheet">
+	  <link href="others css\sommet.css" rel="stylesheet">
+      <style>
+		#up
+		{
+		margin-top: 100px;
+		}
+		#down
+		{
+		margin-top: 150px;
+		}
+		#marge
+		{
+		margin-top: 30px;
+		}
+        #top
+		{
+		height: 100vh;
+		width : 100%;
+		z-index: 9;
+		position  :absolute;
+		color : white;
+        } 
+        #contact
+		{
+		background-color: #c14333;
+		color: white;
+		height: 800px;
+		margin-top: 20px;
+        }
+        #picrow
+        {
+        background-image: url(./pics/1.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        z-index: 7;
+        }
+		#picrow2
+        {
+		background : black;
+		opacity : 0.25;
+		height: 100vh;
+		width : 100%;
+		z-index: 8;
+		position  :absolute;
+        }
+		body 
+		{
+		position: relative;
+		}
+		@font-face 
+		{
+		font-family: Font1;
+		src: url(./fonts/brandon-grotesque-light.otf);
+		}
+		@font-face 
+		{
+		font-family: Font2;
+		src: url(./fonts/brandon-grotesque-bold.otf);
+		}
+		@font-face 
+		{
+		font-family: Font3;
+		src: url(./fonts/brandon-grotesque-medium.otf);
+		}
+		@font-face 
+		{
+		font-family: Font4;
+		src: url(./fonts/brandon-grotesque-regular-italic.otf);
+		}
+		#light
+		{
+		font-family: Font1;
+		}
+		#bold
+		{
+		font-family: Font2;
+		}
+		#medium
+		{
+		font-family: Font3;
+		}
+		#text
+		{
+		font-family: Font3;
+		}
+		#button1 
+		{ 
+		position :relative;
+		font-size: 20px;
+		color: #d92e19;
+		border-color: #d92e19;
+		border-radius: 5px;
+		border-width: medium;
+		width: 240px;
+		height: 65px;
+		}
+		#button2 
+		{ 
+		position :relative;
+		font-size: 20px;
+		color: #fff;;
+		border-color: #fff;
+		border-radius: 5px;
+		border-width: medium;
+		width: 240px;
+		height: 65px;
+		}
+      </style>
+	  
+   </head>
+   <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+         <a class="navbar-brand" href="#">
+         <img class="img-responsive" src="pics\logo4.png"  > 
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="#Formations"><span id="medium">Formations</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#Produits"><span id="medium">Produits</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#Services"><span id="medium">Services</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#Contact"><span id="medium">Contact</span></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+	  
+    <div class="container-fluid">
+		 <div id="picrow2" class="row"></div>
+         <div id="top" class="row">
+            <div id="up" class="col-md-12">
+				<div class="row justify-content-center">
+				    <p class="formation" ><span id="light">Formations, Produits et Services</span></p>
+				</div>
+			
+				<div id="up" class="row justify-content-center">
+				<h1 class="sommet"><b><span id="bold">EN ROUTE POUR LE SOMMET</span></b></h1>
+				</div>
+	         
+				<div id="down" class="row justify-content-center">
+				   <a id="button2" href="http://formosa.fr/" class="btn btn-default">En savoir plus</a> 
+				</div>
+	        </div>
+           
+         </div>
+         
+		 <div id="picrow" class="row"></div>
+    </div>
+	  
+      <div id="Formations"  class="container">
+         <div id="marge" class="row">
+            <div class="col-md-6">
+               <h1> <span id="light">Nos </span><span id="bold"><b>Formations</b></span></h1>
+               <p>Coté formation l'entreprise propose le catalogue suivant. Cependant en 
+                  fonction de vos désirs, nous ainsi que nos partenaires pouvons vous proposer la formation 
+                  sur-mesure correspondant à votre projet pédagogique. 
+               </p>
+			   <a id="button1" href="http://formosa.fr/formation.php" class="btn btn-default">Catalogue</a>
+            </div>
+            <div class="col-md-6">
+               <img class="img-responsive" src="pics\2.jpg" width="100%" >
+            </div>
+         </div>
       </div>
-    </nav>
-	
-	
-<div class="containerr">
-<div class="picture row">
-<div class="col-md-12">
- <img class="img-responsive" src="pics\11.jpg" width="100%" > 
- <button type="button" class="btn">En savoir plus</button>
- <div class="textimage1">Formations,Produits et Services</div>
- <div class="textimage2">EN ROUTE POUR LE SOMMET</div>
-</div>
-</div>
-</div>
+	  
+      <div class="jumbotron " >
+         <div id="Produits"  class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <img class="img-responsive" src="pics\3.jpg" width="100%" >
+               </div>
+               <div class="col-md-6">
+                  <h1> <span id="light">Nos </span><span id="bold"><b>Produits</b></span></h1>
+                  <p>Formosa c'est aussi un produit,un logiciel pour l'apprentissage du
+                     Chinois nommé SmartChinese
+                     SmartChineseest au coeur de la recherche et de l'innovation
+                     avec des moyens pédagogiques inédit
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+	  
+      <div id="Services" class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h1> <span id="light">Nos </span><span id="bold"><b>Services</span></b></h1>
+               <p>Formosa c'est aussi du service en: réalisation de site web,
+                  traduction de site web en Chinois,suivi de projet.
+                  Nous collaborons aussi avec les écoles de productions 
+                  et des ecoles privées en informatiques
+               </p>
+            </div>
+            <div class="col-md-6">
+               <img class="img-responsive" src="pics\4.jpg" width="100%" >
+            </div>
+         </div>
+      </div>
 
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<h1> Nos <b>Formations</b></h1>
-<p>Coté formation l'entreprise propose le catalogue suivant. Cependant en 
-fonction de vos désirs, nous ainsi que nos partenaires pouvons vous proposer la formation 
-sur-mesure correspondant à votre projet pédagogique. </p>
-<button type="button" class="btnn">Catalogue</button>
-</div>
-<div class="col-md-6">
-<img class="img-responsive" src="pics\2.jpg" width="100%" >
-</div>
-</div>
-</div>
-
-<div class="jumbotron " >
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<img class="img-responsive" src="pics\3.jpg" width="100%" >
-</div>
-<div class="col-md-6">
-<h1> Nos <b>Produits</b></h1>
-<p>Formosa c'est aussi un produit,un logiciel pour l'apprentissage du
-Chinois nommé SmartChinese
-SmartChineseest au coeur de la recherche et de l'innovation
-avec des moyens pédagogiques inédit</p>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<h1> Nos <b>Services</b></h1>
-<p>Formosa c'est aussi du service en: réalisation de site web,
-traduction de site web en Chinois,suivi de projet.
-Nous collaborons aussi avec les écoles de productions 
-et des ecoles privées en informatiques</p>
-</div>
-<div class="col-md-6">
-<img class="img-responsive" src="pics\4.jpg" width="100%" >
-</div>
-</div>
-</div>
-
-<div class="container">
-<div class="row text-center">
-<div class="col-md-3">
-<img class="img-responsive" src="pics\Envato.png" width="50%" >
-</div>
-<div class="col-md-3">
-<img class="img-responsive" src="pics\WordPress.png" width="50%" >
-</div>
-<div class="col-md-3 ">
-<img class="img-responsive" src="pics\Tuts+.png" width="50%" >
-</div>
-<div class="col-md-3 ">
-<img class="img-responsive" src="pics\Microlancer.png" width="50%" >
-</div>
-</div>
-</div>
-
-
-<div class="container">
-<div id="contact" class="row">
-<div class="col-md-6">
-<h1><b>CONTACTEZ-</b>Nous</h1>
-<p>Envie de discuter autour d’un projet, d’une formation, d’une idée, 
-nous sommes à votre écoute</p>
-<p style="float: left;"><img class="img-responsive" src="pics\Mobile-Icon.png" width: 18px; height: 29px; > </p>
-<p>+33662158609</p>
-<p style="float: left;"><img class="img-responsive" src="pics\Twitter-Icon.png" width: 18px; height: 29px; > </p>
-<p>@formosa</p>
-<p style="float: left;"><img class="img-responsive" src="pics\Google+-Icon.png" width: 18px; height: 29px; > </p>
-<p>+plus.com/formosa</p>
-
-</div>
-<div class="col-md-6">
-<div class="form-group shadow-textarea">
-  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="1" placeholder="Votre Nom *"></textarea>
-</div>
-<div class="form-group shadow-textarea">
-  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="1" placeholder="Votre E-mail *"></textarea>
-</div>
-<div class="form-group shadow-textarea">
-  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="6" placeholder="Votre Message *"></textarea>
-</div>
-</div>
-</div>
-</div>
-
-</body>
+      <div id="Contact" class="container">
+         <div id="marge" class="row text-center">
+            <div class="col-md-3">
+               <img class="img-responsive" src="pics\Envato.png" width="50%" >
+            </div>
+            <div class="col-md-3">
+               <img class="img-responsive" src="pics\WordPress.png" width="50%" >
+            </div>
+            <div class="col-md-3 ">
+               <img class="img-responsive" src="pics\Tuts+.png" width="50%" >
+            </div>
+            <div class="col-md-3 ">
+               <img class="img-responsive" src="pics\Microlancer.png" width="50%" >
+            </div>
+         </div>
+      </div>
+	  
+      <div id="contact" class="container-fluid">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <h1><span id="bold"><b>CONTACTEZ-</b></span><span id="light">Nous</span></h1>
+                  <p>Envie de discuter autour d’un projet, d’une formation, d’une idée, 
+                     nous sommes à votre écoute
+                  </p>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Mobile-Icon.png" width: 18px; height: 29px; > </p>
+                        <p> +33662158609</p>
+                     </div>
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Mail-Icon.png" width: 18px; height: 29px; > </p>
+                        <p>contact@formosa.fr</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Twitter-Icon.png" width: 18px; height: 29px; > </p>
+                        <p>@formosa</p>
+                     </div>
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Facebook-Icon.png" width: 18px; height: 29px; > </p>
+                        <p>facebook.com/formosa</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p style="float: left;"><img style="margin-right: 5px" class="img-responsive" src="pics\Google+-Icon.png" width: 18px; height: 29px; > </p>
+                        <p>+plus.com/formosa</p>
+                     </div>
+                  </div>
+               </div>
+			    <div class="col-md-6">
+               <div class="form-group shadow-textarea">
+                  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="1" placeholder="Votre Nom *"></textarea>
+               </div>
+               <div class="form-group shadow-textarea">
+                  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="1" placeholder="Votre E-mail *"></textarea>
+               </div>
+               <div class="form-group shadow-textarea">
+                  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="6" placeholder="Votre Message *"></textarea>
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
+	  
+   </body>
 </html>
+
