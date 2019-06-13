@@ -31,6 +31,10 @@
 		{
 		margin-top: 30px;
 		}
+		#margecontact
+		{
+		margin-top: 100px;
+		}
         #top
 		{
 		height: 100vh;
@@ -43,7 +47,7 @@
 		{
 		background-color: #c14333;
 		color: white;
-		height: 800px;
+		height: 1000px;
 		margin-top: 20px;
         }
         #picrow
@@ -127,6 +131,17 @@
 		width: 240px;
 		height: 65px;
 		}
+		#button3 
+		{ 
+		position :relative;
+		font-size: 20px;
+		color: #fff;;
+		border-color: #fff;
+		border-radius: 5px;
+		border-width: medium;
+		width: 240px;
+		height: 65px;
+		}
       </style>
 	  
    </head>
@@ -192,7 +207,7 @@
          </div>
       </div>
 	  
-      <div class="jumbotron " >
+      <div class="jumbotron" >
          <div id="Produits"  class="container">
             <div class="row">
                <div class="col-md-6">
@@ -244,9 +259,9 @@
       </div>
 	  
       <div id="contact" class="container-fluid">
-         <div class="container">
+         <div id="marge" class="container">
             <div class="row">
-               <div class="col-md-6">
+               <div id="margecontact" class="col-md-6">
                   <h1><span id="bold"><b>CONTACTEZ-</b></span><span id="light">Nous</span></h1>
                   <p><span id="regular">Envie de discuter autour d’un projet, d’une formation, d’une idée, 
                      nous sommes à votre écoute</span>
@@ -278,20 +293,25 @@
                      </div>
                   </div>
                </div>
-			    <div class="col-md-6">
-               <div class="form-group shadow-textarea">
+	<div id="margecontact" class="col-md-6">
+		<input class="input" type="text" placeholder="  Votre Nom *" style="width: 456px;height: 50px;border: 1px solid #cccccc;background-color: #ffffff">
+		<input class="input" type="text" placeholder="  Votre E-mail *" style="width: 456px;height: 50px;border: 1px solid #cccccc;background-color: #ffffff;margin-top: 30px;
+        margin-bottom: 20px">
+            <!--     <div class="form-group shadow-textarea">
                   <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="1" placeholder="Votre Nom *"></textarea>
                </div>
                <div class="form-group shadow-textarea">
                   <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="1" placeholder="Votre E-mail *"></textarea>
                </div>
+			   --> 
                <div class="form-group shadow-textarea">
-                  <textarea class="form-control z-depth-1" style="width: 75%" id="exampleFormControlTextarea6" rows="6" placeholder="Votre Message *"></textarea>
+                  <textarea class="form-control z-depth-1" style="width: 456px;height: 210px" id="exampleFormControlTextarea6" rows="6" placeholder="Votre Message *"></textarea>
                </div>
-            </div>
+			   <a id="button3" href="#" class="btn btn-default">Envoyer</a>
+    </div>
             </div>
          </div>
-      </div>
+       </div>
 	  
    </body>
 </html>
